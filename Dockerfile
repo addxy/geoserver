@@ -53,14 +53,14 @@ RUN wget -c http://downloads.sourceforge.net/project/geoserver/GeoServer/$GEOSER
     rm ~/geoserver.zip
 
 # Get OGR WFS plugin
-RUN wget -c http://downloads.sourceforge.net/project/geoserver/GeoServer/$GEOSERVER_VERSION/extensions/geoserver-$GEOSERVER_VERSION-ogr-wfs-plugin.zip -O ~/geoserver-ogr-wfs-plugin.zip &&\
-    unzip -o ~/geoserver-ogr-wfs-plugin.zip -d /opt/geoserver/webapps/geoserver/WEB-INF/lib/ && \
-    rm ~/geoserver-ogr-wfs-plugin.zip
+#RUN wget -c http://downloads.sourceforge.net/project/geoserver/GeoServer/$GEOSERVER_VERSION/extensions/geoserver-$GEOSERVER_VERSION-ogr-wfs-plugin.zip -O ~/geoserver-ogr-wfs-plugin.zip &&\
+#    unzip -o ~/geoserver-ogr-wfs-plugin.zip -d /opt/geoserver/webapps/geoserver/WEB-INF/lib/ && \
+#    rm ~/geoserver-ogr-wfs-plugin.zip
 
 # Get OGR WPS plugin
-RUN wget -c http://downloads.sourceforge.net/project/geoserver/GeoServer/$GEOSERVER_VERSION/extensions/geoserver-$GEOSERVER_VERSION-ogr-wps-plugin.zip -O ~/geoserver-ogr-wps-plugin.zip &&\
-    unzip -o ~/geoserver-ogr-wps-plugin.zip -d /opt/geoserver/webapps/geoserver/WEB-INF/lib/ && \
-    rm ~/geoserver-ogr-wps-plugin.zip
+#RUN wget -c http://downloads.sourceforge.net/project/geoserver/GeoServer/$GEOSERVER_VERSION/extensions/geoserver-$GEOSERVER_VERSION-ogr-wps-plugin.zip -O ~/geoserver-ogr-wps-plugin.zip &&\
+#    unzip -o ~/geoserver-ogr-wps-plugin.zip -d /opt/geoserver/webapps/geoserver/WEB-INF/lib/ && \
+#    rm ~/geoserver-ogr-wps-plugin.zip
     
 # Get GDAL plugin
 RUN wget -c http://downloads.sourceforge.net/project/geoserver/GeoServer/$GEOSERVER_VERSION/extensions/geoserver-$GEOSERVER_VERSION-gdal-plugin.zip -O ~/geoserver-gdal-plugin.zip &&\
